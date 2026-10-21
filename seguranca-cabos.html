@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organização dos Cabos das Panelas - Sabor & Praticidade</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .back-link {
+            display: inline-block;
+            margin-bottom: 20px;
+            background-color: var(--primary-color);
+            color: #FFFFFF;
+            padding: 10px 18px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .figure-box {
+            background-color: var(--surface-color);
+            border: 2px solid var(--border-color);
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+            margin: 25px 0;
+        }
+        .figure-box svg {
+            max-width: 100%;
+            height: auto;
+        }
+        .detail-content p {
+            margin-bottom: 15px;
+            font-size: var(--font-body);
+        }
+    </style>
+</head>
+<body>
+    <input type="checkbox" id="contrast-toggle" aria-label="Alternar Alto Contraste">
+    <input type="checkbox" id="font-toggle" aria-label="Alternar Letra Grande">
+
+    <div>
+        <div class="accessibility-bar" role="region" aria-label="Ferramentas de Acessibilidade">
+            <span><strong>Opções de Leitura:</strong></span>
+            <div class="accessibility-controls">
+                <label for="font-toggle" class="acc-btn" tabindex="0" role="button">🔍 Aumentar / Diminuir Letra</label>
+                <label for="contrast-toggle" class="acc-btn" tabindex="0" role="button">◐ Alto Contraste</label>
+            </div>
+        </div>
+
+        <header role="banner">
+            <h1>🍳 Sabor & Praticidade</h1>
+            <p>Guia Aprofundado de Segurança na Cozinha</p>
+        </header>
+
+        <main id="conteudo-principal">
+            <a href="index.html#seguranca" class="back-link">← Voltar à Página Principal</a>
+
+            <article class="detail-content">
+                <h2 class="section-title">🛡️ Organização dos Cabos das Panelas</h2>
+                
+                <p>O posicionamento correto das panelas no fogão é um dos passos mais cruciais para a prevenção de queimaduras e acidentes domésticos graves. Um cabo projetado para fora da bancada ou do fogão fica vulnerável a esbarrões involuntários de braços, roupas sólidas ou aventais.</p>
+
+                <div class="figure-box" role="img" aria-label="Ilustração mostrando o modo correto e incorreto de posicionar os cabos das panelas no fogão">
+                    <svg width="400" height="200" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Fogão Base -->
+                        <rect x="50" y="140" width="300" height="40" fill="#4A4A4A" rx="5" />
+                        <circle cx="120" cy="130" r="30" fill="#005F73" />
+                        <circle cx="280" cy="130" r="30" fill="#005F73" />
+                        
+                        <!-- Panela Incorreta (Esquerda) -->
+                        <rect x="95" y="90" width="50" height="35" fill="#9B2226" rx="4" />
+                        <rect x="35" y="100" width="60" height="8" fill="#9B2226" rx="3" />
+                        <text x="35" y="80" fill="#9B2226" font-size="14" font-weight="bold">❌ INCORRETO</text>
+                        
+                        <!-- Panela Correta (Direita) -->
+                        <rect x="255" y="90" width="50" height="35" fill="#0A9396" rx="4" />
+                        <rect x="200" y="100" width="60" height="8" fill="#0A9396" rx="3" />
+                        <text x="200" y="80" fill="#0A9396" font-size="14" font-weight="bold">✓ CORRETO</text>
+                    </svg>
+                    <p><em>Figura 1: Cabos virados para fora representam risco de colisão. Cabos virados para o interior mantêm a área segura.</em></p>
+                </div>
+
+                <h3>Recomendações Práticas de Uso:</h3>
+                <ul style="margin-left: 20px; margin-bottom: 20px;">
+                    <li><strong>Bocas Traseiras:</strong> Sempre que possível, utilize as bocas de trás do fogão para cozimentos mais longos ou fervura de líquidos.</li>
+                    <li><strong>Direcionamento Interno:</strong> Mantenha os cabos apontados para a parte central do fogão ou para a lateral interior da bancada.</li>
+                    <li><strong>Panos Secos:</strong> Ao ajustar a posição de panelas quentes, certifique-se de que a pega ou pano utilizado esteja completamente seco para evitar transferência rápida de calor pelo vapor.</li>
+                </ul>
+            </article>
+        </main>
+
+        <footer role="contentinfo">
+            <p><strong>Sabor & Praticidade</strong> - Foco total em acessibilidade web e segurança.</p>
+        </footer>
+    </div>
+</body>
+</html>

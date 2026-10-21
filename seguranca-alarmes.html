@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarme e Lembretes de Fogão - Sabor & Praticidade</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .back-link {
+            display: inline-block;
+            margin-bottom: 20px;
+            background-color: var(--primary-color);
+            color: #FFFFFF;
+            padding: 10px 18px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .figure-box {
+            background-color: var(--surface-color);
+            border: 2px solid var(--border-color);
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+            margin: 25px 0;
+        }
+        .figure-box svg {
+            max-width: 100%;
+            height: auto;
+        }
+        .detail-content p {
+            margin-bottom: 15px;
+            font-size: var(--font-body);
+        }
+    </style>
+</head>
+<body>
+    <input type="checkbox" id="contrast-toggle" aria-label="Alternar Alto Contraste">
+    <input type="checkbox" id="font-toggle" aria-label="Alternar Letra Grande">
+
+    <div>
+        <div class="accessibility-bar" role="region" aria-label="Ferramentas de Acessibilidade">
+            <span><strong>Opções de Leitura:</strong></span>
+            <div class="accessibility-controls">
+                <label for="font-toggle" class="acc-btn" tabindex="0" role="button">🔍 Aumentar / Diminuir Letra</label>
+                <label for="contrast-toggle" class="acc-btn" tabindex="0" role="button">◐ Alto Contraste</label>
+            </div>
+        </div>
+
+        <header role="banner">
+            <h1>🍳 Sabor & Praticidade</h1>
+            <p>Guia Aprofundado de Gestão de Tempo na Cozinha</p>
+        </header>
+
+        <main id="conteudo-principal">
+            <a href="index.html#seguranca" class="back-link">← Voltar à Página Principal</a>
+
+            <article class="detail-content">
+                <h2 class="section-title">🛡️ Alarme e Lembretes de Fogão</h2>
+                
+                <p>É comum se distrair enquanto uma comida cozinha ou assa, especialmente em preparos mais longos. Usar ferramentas visuais e sonoras evita que os alimentos queimem e previne riscos de incêndio.</p>
+
+                <div class="figure-box" role="img" aria-label="Ilustração mostrando um timer digital e celular com alarme ativo">
+                    <svg width="400" height="200" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Relógio Timer -->
+                        <circle cx="130" cy="100" r="50" fill="#005F73" stroke="#E9D8A6" stroke-width="4" />
+                        <circle cx="130" cy="100" r="40" fill="#FFFFFF" />
+                        <line x1="130" y1="100" x2="130" y2="70" stroke="#9B2226" stroke-width="4" stroke-linecap="round" />
+                        <line x1="130" y1="100" x2="150" y2="100" stroke="#1A1A1A" stroke-width="3" stroke-linecap="round" />
+                        
+                        <!-- Celular -->
+                        <rect x="230" y="40" width="80" height="130" rx="10" fill="#1A1A1A" />
+                        <rect x="240" y="55" width="60" height="90" rx="4" fill="#FFFFFF" />
+                        <text x="250" y="95" fill="#9B2226" font-size="18" font-weight="bold">15:00</text>
+                        <path d="M 260 110 L 280 110 L 270 125 Z" fill="#0A9396" />
+                    </svg>
+                    <p><em>Figura 3: Timers mecânicos ou alarmes no telemóvel garantem total controle dos tempos de cozimento.</em></p>
+                </div>
+
+                <h3>Boas Práticas para Evitar Esquecimentos:</h3>
+                <ul style="margin-left: 20px; margin-bottom: 20px;">
+                    <li><strong>Regra do Lembrete Imediato:</strong> Ao acender a chama ou ligar o forno, programe o temporizador imediatamente antes de sair de perto do fogão.</li>
+                    <li><strong>Alarmes Sonoros Altos:</strong> Se for mudar de cômodo (ir para a sala ou quarto), leve o timer ou o celular com o volume alto.</li>
+                    <li><strong>Uso de Assistentes de Voz:</strong> Se tiver assistente virtual em casa, use comandos simples como "Avisar em 20 minutos".</li>
+                </ul>
+            </article>
+        </main>
+
+        <footer role="contentinfo">
+            <p><strong>Sabor & Praticidade</strong> - Foco total em acessibilidade web e segurança.</p>
+        </footer>
+    </div>
+</body>
+</html>

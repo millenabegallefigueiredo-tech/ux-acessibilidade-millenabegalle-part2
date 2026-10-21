@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Utensílios Leves e Antiderrapantes - Sabor & Praticidade</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .back-link {
+            display: inline-block;
+            margin-bottom: 20px;
+            background-color: var(--primary-color);
+            color: #FFFFFF;
+            padding: 10px 18px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .figure-box {
+            background-color: var(--surface-color);
+            border: 2px solid var(--border-color);
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+            margin: 25px 0;
+        }
+        .figure-box svg {
+            max-width: 100%;
+            height: auto;
+        }
+        .detail-content p {
+            margin-bottom: 15px;
+            font-size: var(--font-body);
+        }
+    </style>
+</head>
+<body>
+    <input type="checkbox" id="contrast-toggle" aria-label="Alternar Alto Contraste">
+    <input type="checkbox" id="font-toggle" aria-label="Alternar Letra Grande">
+
+    <div>
+        <div class="accessibility-bar" role="region" aria-label="Ferramentas de Acessibilidade">
+            <span><strong>Opções de Leitura:</strong></span>
+            <div class="accessibility-controls">
+                <label for="font-toggle" class="acc-btn" tabindex="0" role="button">🔍 Aumentar / Diminuir Letra</label>
+                <label for="contrast-toggle" class="acc-btn" tabindex="0" role="button">◐ Alto Contraste</label>
+            </div>
+        </div>
+
+        <header role="banner">
+            <h1>🍳 Sabor & Praticidade</h1>
+            <p>Guia Aprofundado de Ergonomia e Utensílios</p>
+        </header>
+
+        <main id="conteudo-principal">
+            <a href="index.html#seguranca" class="back-link">← Voltar à Página Principal</a>
+
+            <article class="detail-content">
+                <h2 class="section-title">🛡️ Utensílios Leves e Antiderrapantes</h2>
+                
+                <p>A escolha correta dos materiais utilizados na bancada da cozinha previne a fadiga muscular e evita deslizamentos perigosos durante o manuseio de facas e objetos cortantes.</p>
+
+                <div class="figure-box" role="img" aria-label="Ilustração mostrando uma tábua de cortar com base antiderrapante e utensílios leves de silicone">
+                    <svg width="400" height="200" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Tábua de corte -->
+                        <rect x="80" y="60" width="240" height="100" fill="#E9D8A6" stroke="#005F73" stroke-width="3" rx="10" />
+                        <!-- Borrachas antiderrapantes nos cantos -->
+                        <rect x="85" y="65" width="20" height="10" fill="#9B2226" rx="2" />
+                        <rect x="295" y="65" width="20" height="10" fill="#9B2226" rx="2" />
+                        <rect x="85" y="145" width="20" height="10" fill="#9B2226" rx="2" />
+                        <rect x="295" y="145" width="20" height="10" fill="#9B2226" rx="2" />
+                        <!-- Pano sob a tábua -->
+                        <path d="M 70 165 L 330 165 L 320 175 L 80 175 Z" fill="#0A9396" opacity="0.6" />
+                        <text x="130" y="110" fill="#1A1A1A" font-size="14" font-weight="bold">Tábua Estável com Base</text>
+                        <text x="120" y="192" fill="#005F73" font-size="12">Pano úmido ou borracha evita deslize</text>
+                    </svg>
+                    <p><em>Figura 2: Fixação da tábua de corte utilizando apoio antiderrapante sob a estrutura.</em></p>
+                </div>
+
+                <h3>Dicas para Escolha de Materiais:</h3>
+                <ul style="margin-left: 20px; margin-bottom: 20px;">
+                    <li><strong>Silicone e Madeira Leve:</strong> Utensílios de silicone são fáceis de segurar, leves e não conduzem calor rapidamente como o metal.</li>
+                    <li><strong>Estabilização de Tábuas:</strong> Se a sua tábua de corte não possuir pés de borracha, coloque um pano de prato levemente úmido diretamente em baixo dela antes de começar a cortar.</li>
+                    <li><strong>Empunhadura Emborrachada:</strong> Dê preferência a descascadores e facas com cabos anatômicos e mais grossos, que exigem menos força nos dedos.</li>
+                </ul>
+            </article>
+        </main>
+
+        <footer role="contentinfo">
+            <p><strong>Sabor & Praticidade</strong> - Foco total em acessibilidade web e segurança.</p>
+        </footer>
+    </div>
+</body>
+</html>

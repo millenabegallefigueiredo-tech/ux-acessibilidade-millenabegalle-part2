@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descasque sem Dificuldade - Sabor & Praticidade</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .back-link {
+            display: inline-block;
+            margin-bottom: 20px;
+            background-color: var(--primary-color);
+            color: #FFFFFF;
+            padding: 10px 18px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .figure-box {
+            background-color: var(--surface-color);
+            border: 2px solid var(--border-color);
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+            margin: 25px 0;
+        }
+        .figure-box svg {
+            max-width: 100%;
+            height: auto;
+        }
+        .detail-content p {
+            margin-bottom: 15px;
+            font-size: var(--font-body);
+        }
+    </style>
+</head>
+<body>
+    <input type="checkbox" id="contrast-toggle" aria-label="Alternar Alto Contraste">
+    <input type="checkbox" id="font-toggle" aria-label="Alternar Letra Grande">
+
+    <div>
+        <div class="accessibility-bar" role="region" aria-label="Ferramentas de Acessibilidade">
+            <span><strong>Opções de Leitura:</strong></span>
+            <div class="accessibility-controls">
+                <label for="font-toggle" class="acc-btn" tabindex="0" role="button">🔍 Aumentar / Diminuir Letra</label>
+                <label for="contrast-toggle" class="acc-btn" tabindex="0" role="button">◐ Alto Contraste</label>
+            </div>
+        </div>
+
+        <header role="banner">
+            <h1>🍳 Sabor & Praticidade</h1>
+            <p>Guia de Técnicas Culinárias Sem Esforço</p>
+        </header>
+
+        <main id="conteudo-principal">
+            <a href="index.html#praticidade" class="back-link">← Voltar à Página Principal</a>
+
+            <article class="detail-content">
+                <h2 class="section-title">💡 Descasque sem Dificuldade</h2>
+                
+                <p>Descascar alho e outros vegetais pequenos pode ser uma tarefa demorada e desconfortável para as mãos e unhas. Utilizar o método de hidratação prévia amolece as cascas secas naturalmente.</p>
+
+                <div class="figure-box" role="img" aria-label="Ilustração demonstrando o processo de remolho dos dentes de alho em uma tigela com água">
+                    <svg width="400" height="200" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Tigela com água -->
+                        <path d="M 100 80 Q 100 160 200 160 Q 300 160 300 80 Z" fill="#0A9396" opacity="0.3" stroke="#005F73" stroke-width="4" />
+                        <!-- Nível da água -->
+                        <ellipse cx="200" cy="80" rx="100" ry="15" fill="#0A9396" opacity="0.5" />
+                        <!-- Dentes de Alho dentro da água -->
+                        <path d="M 160 110 Q 170 90 180 110 Q 170 125 160 110" fill="#E9D8A6" stroke="#4A4A4A" stroke-width="2" />
+                        <path d="M 210 115 Q 220 95 230 115 Q 220 130 210 115" fill="#E9D8A6" stroke="#4A4A4A" stroke-width="2" />
+                        <path d="M 185 130 Q 195 110 205 130 Q 195 145 185 130" fill="#E9D8A6" stroke="#4A4A4A" stroke-width="2" />
+                        <text x="145" y="45" fill="#005F73" font-size="15" font-weight="bold">Deixar de molho: 10 Minutos</text>
+                    </svg>
+                    <p><em>Figura 4: Ao absorver água, a película do alho se solta facilmente sem necessidade de raspar com força.</em></p>
+                </div>
+
+                <h3>Passo a Passo da Técnica:</h3>
+                <ol style="margin-left: 20px; margin-bottom: 20px;">
+                    <li>Separe os dentes de alho da cabeça principal.</li>
+                    <li>Coloque-os em um recipiente pequeno e cubra totalmente com água em temperatura ambiente.</li>
+                    <li>Aguarde cerca de 10 minutos.</li>
+                    <li>Corte a pontinha da base com uma faca e deslize a casca com os dedos suavemente.</li>
+                </ol>
+            </article>
+        </main>
+
+        <footer role="contentinfo">
+            <p><strong>Sabor & Praticidade</strong> - Foco total em acessibilidade web e segurança.</p>
+        </footer>
+    </div>
+</body>
+</html>

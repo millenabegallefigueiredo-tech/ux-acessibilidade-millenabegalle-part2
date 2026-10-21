@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corte Ergonômico - Sabor & Praticidade</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .back-link {
+            display: inline-block;
+            margin-bottom: 20px;
+            background-color: var(--primary-color);
+            color: #FFFFFF;
+            padding: 10px 18px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .figure-box {
+            background-color: var(--surface-color);
+            border: 2px solid var(--border-color);
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+            margin: 25px 0;
+        }
+        .figure-box svg {
+            max-width: 100%;
+            height: auto;
+        }
+        .detail-content p {
+            margin-bottom: 15px;
+            font-size: var(--font-body);
+        }
+    </style>
+</head>
+<body>
+    <input type="checkbox" id="contrast-toggle" aria-label="Alternar Alto Contraste">
+    <input type="checkbox" id="font-toggle" aria-label="Alternar Letra Grande">
+
+    <div>
+        <div class="accessibility-bar" role="region" aria-label="Ferramentas de Acessibilidade">
+            <span><strong>Opções de Leitura:</strong></span>
+            <div class="accessibility-controls">
+                <label for="font-toggle" class="acc-btn" tabindex="0" role="button">🔍 Aumentar / Diminuir Letra</label>
+                <label for="contrast-toggle" class="acc-btn" tabindex="0" role="button">◐ Alto Contraste</label>
+            </div>
+        </div>
+
+        <header role="banner">
+            <h1>🍳 Sabor & Praticidade</h1>
+            <p>Guia de Ergonomia e Conservação de Energia</p>
+        </header>
+
+        <main id="conteudo-principal">
+            <a href="index.html#praticidade" class="back-link">← Voltar à Página Principal</a>
+
+            <article class="detail-content">
+                <h2 class="section-title">💡 Corte Ergonômico e Conforto Postural</h2>
+                
+                <p>Passar longos períodos em pé na cozinha pode provocar dores lombares e nas pernas. Adaptar a altura de trabalho e utilizar uma cadeira confortável garante mais autonomia e menos fadiga.</p>
+
+                <div class="figure-box" role="img" aria-label="Ilustração mostrando uma pessoa sentada de forma ergonômica preparando alimentos à mesa">
+                    <svg width="400" height="200" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Mesa -->
+                        <rect x="200" y="100" width="150" height="15" fill="#005F73" />
+                        <rect x="320" y="115" width="15" height="70" fill="#005F73" />
+                        <!-- Cadeira -->
+                        <rect x="100" y="110" width="60" height="10" fill="#9B2226" />
+                        <rect x="90" y="60" width="10" height="100" fill="#9B2226" />
+                        <rect x="110" y="120" width="10" height="65" fill="#9B2226" />
+                        <rect x="140" y="120" width="10" height="65" fill="#9B2226" />
+                        <!-- Tábua sobre a mesa -->
+                        <rect x="220" y="92" width="60" height="8" fill="#E9D8A6" stroke="#1A1A1A" />
+                        <text x="210" y="60" fill="#0A9396" font-size="14" font-weight="bold">Postura Sentada & Relaxada</text>
+                    </svg>
+                    <p><em>Figura 5: Picar vegetais na mesa de jantar reduz significativamente a pressão sobre a coluna vertebral.</em></p>
+                </div>
+
+                <h3>Dicas para Redução do Cansaço:</h3>
+                <ul style="margin-left: 20px; margin-bottom: 20px;">
+                    <li><strong>Mesa Principal:</strong> Utilize a mesa de jantar (que costuma ser mais baixa que a bancada da cozinha) para trabalhar sentado.</li>
+                    <li><strong>Apoio para os Pés:</strong> Mantenha os pés totalmente apoiados no chão ou em um descanso para pés.</li>
+                    <li><strong>Apoio de Braço:</strong> Evite erguer demais os ombros durante o corte; mantenha os cotovelos próximos ao corpo.</li>
+                </ul>
+            </article>
+        </main>
+
+        <footer role="contentinfo">
+            <p><strong>Sabor & Praticidade</strong> - Foco total em acessibilidade web e segurança.</p>
+        </footer>
+    </div>
+</body>
+</html>

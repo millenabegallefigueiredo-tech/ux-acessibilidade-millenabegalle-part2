@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabor & Praticidade - Culinária Acessível</title>
+    <!-- Vinculação com o arquivo CSS externo -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- CONTROLES DE ACESSIBILIDADE VIA CSS -->
+    <input type="checkbox" id="contrast-toggle" aria-label="Alternar Alto Contraste">
+    <input type="checkbox" id="font-toggle" aria-label="Alternar Letra Grande">
+
+    <div>
+        <!-- BARRA DE FERRAMENTAS SUPERIOR (ACESSIBILIDADE) -->
+        <div class="accessibility-bar" role="region" aria-label="Ferramentas de Acessibilidade">
+            <span><strong>Opções de Leitura:</strong></span>
+            <div class="accessibility-controls">
+                <label for="font-toggle" class="acc-btn" tabindex="0" role="button">
+                    🔍 Aumentar / Diminuir Letra
+                </label>
+                <label for="contrast-toggle" class="acc-btn" tabindex="0" role="button">
+                    ◐ Alto Contraste
+                </label>
+            </div>
+        </div>
+
+        <!-- CABEÇALHO DO APLICATIVO -->
+        <header role="banner">
+            <h1>🍳 Sabor & Praticidade</h1>
+            <p>Dicas de culinária simples, seguras e saudáveis para o seu dia a dia.</p>
+        </header>
+
+        <!-- NAVEGAÇÃO PRINCIPAL -->
+        <nav role="navigation" aria-label="Menu Principal">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="#seguranca">🛡️ Dicas de Segurança</a></li>
+                <li class="nav-item"><a href="#praticidade">💡 Praticidade</a></li>
+                <li class="nav-item"><a href="#receitas">🍲 Receitas Fáceis</a></li>
+            </ul>
+        </nav>
+
+        <!-- CONTEÚDO PRINCIPAL -->
+        <main id="conteudo-principal">
+
+            <!-- SEÇÃO 1: SEGURANÇA NA COZINHA -->
+            <section id="seguranca" tabindex="-1">
+                <h2 class="section-title">🛡️ Dicas de Segurança na Cozinha</h2>
+                
+                <div class="tip-box" role="note">
+                    <h3>⚠️ Atenção Prioritária</h3>
+                    <p>Cozinhar é um prazer, mas a segurança vem em primeiro lugar! Mantenha sempre o chão seco para evitar escorregões e prefira usar panos de prato secos para segurar cabos quentes.</p>
+                </div>
+
+                <div class="card-grid">
+                    <a href="seguranca-cabos.html" class="card-link">
+                        <article class="card">
+                            <h3>1. Organize os Cabos das Panelas</h3>
+                            <p>Ao cozinhar na boca do fogão, vire sempre os cabos das panelas para o <strong>lado de dentro</strong>. Isso evita que você esbarre neles sem querer.</p>
+                            <span class="card-btn">Ler mais e ver guia →</span>
+                        </article>
+                    </a>
+
+                    <a href="seguranca-utensilios.html" class="card-link">
+                        <article class="card">
+                            <h3>2. Use Utensílios Leves e Antiderrapantes</h3>
+                            <p>Dê preferência a colheres de pau ou silicone e tábuas com borracha embaixo. Elas não escorregam na bancada ao cortar alimentos.</p>
+                            <span class="card-btn">Ler mais e ver guia →</span>
+                        </article>
+                    </a>
+
+                    <a href="seguranca-alarmes.html" class="card-link">
+                        <article class="card">
+                            <h3>3. Alarme e Lembretes de Fogão</h3>
+                            <p>Sempre que ligar o forno ou fogão, use o alarme do celular ou um relógio de cozinha para lembrar de desligar a chama no tempo certo.</p>
+                            <span class="card-btn">Ler mais e ver guia →</span>
+                        </article>
+                    </a>
+                </div>
+            </section>
+
+            <!-- SEÇÃO 2: DICAS DE PRATICIDADE -->
+            <section id="praticidade" tabindex="-1">
+                <h2 class="section-title">💡 Praticidade e Economia de Esforço</h2>
+
+                <div class="card-grid">
+                    <a href="praticidade-descascar.html" class="card-link">
+                        <article class="card">
+                            <h3>Descasque sem Dificuldade</h3>
+                            <p>Para descascar o alho facilmente, coloque os dentes de molho em uma tigela com água por 10 minutos antes de usar. A casca sairá quase sozinha!</p>
+                            <span class="card-btn">Ler mais e ver guia →</span>
+                        </article>
+                    </a>
+
+                    <a href="praticidade-corte.html" class="card-link">
+                        <article class="card">
+                            <h3>Corte Ergonômico</h3>
+                            <p>Sente-se em uma cadeira confortável na mesa para picar legumes ou temperos. Não há necessidade de ficar muito tempo em pé na bancada.</p>
+                            <span class="card-btn">Ler mais e ver guia →</span>
+                        </article>
+                    </a>
+
+                    <a href="praticidade-mise-en-place.html" class="card-link">
+                        <article class="card">
+                            <h3>Mise en Place (Tudo à Mão)</h3>
+                            <p>Antes de ligar o fogão, separe todos os ingredientes já medidos e picados em potinhos. Isso evita correria e cansaço.</p>
+                            <span class="card-btn">Ler mais e ver guia →</span>
+                        </article>
+                    </a>
+                </div>
+            </section>
+
+            <!-- SEÇÃO 3: RECEITAS FÁCEIS E SAUDÁVEIS -->
+            <section id="receitas" tabindex="-1">
+                <h2 class="section-title">🍲 Receitas Práticas e Nutritivas</h2>
+
+                <!-- RECEITA 1 -->
+                <article class="recipe-card">
+                    <header class="recipe-header">
+                        <h3>Sopa Nutritiva de Legumes e Frango</h3>
+                        <span class="recipe-badge">Tempo: 25 min | Rende 2 porções</span>
+                    </header>
+                    <div class="recipe-body">
+                        <div class="recipe-section">
+                            <h4>Ingredientes (Marque o que já separou):</h4>
+                            <ul class="ingredients-list">
+                                <li>
+                                    <input type="checkbox" id="ing1-1">
+                                    <label for="ing1-1">1 peito de frango pequeno cortado em cubos</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="ing1-2">
+                                    <label for="ing1-2">1 cenoura média picada em rodelas</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="ing1-3">
+                                    <label for="ing1-3">1 batata-doce ou inglesa picada em cubos</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="ing1-4">
+                                    <label for="ing1-4">1 dente de alho amassado e meio litro de água quente</label>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="recipe-section">
+                            <h4>Modo de Preparo Passo a Passo:</h4>
+                            <ol class="steps-list">
+                                <li>Em uma panela, doure o alho em um fio de azeite.</li>
+                                <li>Adicione os cubos de frango e refogue até ficarem branquinhos.</li>
+                                <li>Acrescente a cenoura e a batata picadas.</li>
+                                <li>Despeje a água quente, adicione uma pitada leve de sal e ferve por 15 minutos até os legumes ficarem bem macios.</li>
+                                <li>Desligue o fogo, espere amornar um pouco e sirva. Bon appétit!</li>
+                            </ol>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- RECEITA 2 -->
+                <article class="recipe-card">
+                    <header class="recipe-header">
+                        <h3>Omelete de Caneca de Micro-ondas</h3>
+                        <span class="recipe-badge">Tempo: 5 min | Sem uso de fogão</span>
+                    </header>
+                    <div class="recipe-body">
+                        <div class="recipe-section">
+                            <h4>Ingredientes:</h4>
+                            <ul class="ingredients-list">
+                                <li>
+                                    <input type="checkbox" id="ing2-1">
+                                    <label for="ing2-1">2 ovos inteiros</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="ing2-2">
+                                    <label for="ing2-2">1 colher de sopa de tomate picadinho</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="ing2-3">
+                                    <label for="ing2-3">1 fatia de queijo picada e cheiro-verde a gosto</label>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="recipe-section">
+                            <h4>Modo de Preparo Passo a Passo:</h4>
+                            <ol class="steps-list">
+                                <li>Unte uma caneca grande com umas gotinhas de azeite.</li>
+                                <li>Quebre os dois ovos dentro da caneca e bata bem com um garfo.</li>
+                                <li>Misture o tomate, o queijo, o cheiro-verde e uma pitada de sal.</li>
+                                <li>Leve ao micro-ondas por 1 minuto e 30 segundos. Verifique se cozinhou e pronto!</li>
+                            </ol>
+                        </div>
+                    </div>
+                </article>
+
+            </section>
+
+        </main>
+
+        <!-- RODAPÉ -->
+        <footer role="contentinfo">
+            <p><strong>Sabor & Praticidade</strong> - Desenvolvido pensando no seu bem-estar, autonomia e saúde.</p>
+            <p style="margin-top: 10px; font-size: 0.95rem;">Desenvolvido com foco total em acessibilidade web.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
